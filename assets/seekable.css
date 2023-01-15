@@ -1,0 +1,119 @@
+body,
+html {
+  height: 100%;
+  margin: 0px;
+}
+
+#sf_res {
+  height: 100%;
+}
+
+.searchify-main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  max-width: 1600px;
+}
+
+#searchify-inner-saved {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.searchify-account {
+  padding: 0 20px;
+  height: 100%;
+  box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+}
+
+.searchify-results {
+  height: 100%;
+  overflow: scroll;
+}
+
+.searchify-inner-results {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.item-result {
+  width: 300px;
+  height: 230px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  padding: 10px;
+}
+
+.searchify-inner-shell {
+  margin: 20px;
+}
+
+#overlay {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+  cursor: pointer;
+}
+
+#overlay-content {
+  background: white;
+  position: absolute;
+  width: 90%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border: 2px solid #7cb89a;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: left;
+}
+
+#overlay_login {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+  cursor: pointer;
+}
+
+#hello {
+  color: #000000a6;
+}
+
+#bottom_user {
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+}
+
+#searchify-inner-saved>.item-result {
+  animation: fadeIn 500ms both
+}
+
+#sf_res>.item-result {
+  animation: fadeIn 500ms both
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
