@@ -8,7 +8,6 @@
 <body>
   <div class="searchify-main">
     <div class="searchify-account">
-
       <div id="bottom_user">
         <p onclick="onl()"> Profile </p>
         <div id="tester" style="display: none">
@@ -113,7 +112,7 @@
           <form style="margin-left: auto;" method="POST" action="<?= $_SERVER["PHP_SELF"] ?>">
             <input id="text" type="text" name="search" placeholder="Search Jobs" required>
             <input id="queryy" style="display: none;" type="submit" name="queried" value="search">
-            <img onclick="query()" src="search.svg" width="20" height="atuo">
+            <img onclick="query()" src="../assets/search.svg" width="20" height="auto">
           </form>
         </div>
 
@@ -170,7 +169,7 @@
             $company_logo = $d["thumbnail"];
 
             if ($company_logo == "") {
-              $company_logo = "job.png";
+              $company_logo = "../assets/job.png";
             }
 
             // store it into a js model then hide it on client side

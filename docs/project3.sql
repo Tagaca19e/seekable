@@ -1,5 +1,5 @@
 DROP TABLE IF EXISTS project3;
-CREATE TABLE project3 (
+CREATE TABLE user (
     email varchar(60) not null check (email != ''),
     user_password varchar(60) not null check (user_password != ''),
     information LONGTEXT NOT NULL,

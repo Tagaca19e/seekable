@@ -91,7 +91,7 @@ function remove(event) {
   let new_string = parsed_saved1.join('|')
 
   $.ajax({
-    url: 'update.php',
+    url: '../apis/update.php',
     type: 'post',
     data: { update: new_string, user_post: cookie },
     success: function (response) {
@@ -106,7 +106,7 @@ function show() {
   // let cookie = "<?php echo $_COOKIE["username"]; ?>";
 
   $.ajax({
-    url: 'display.php',
+    url: '../apis/display.php',
     type: 'post',
     data: { what_user: cookie },
     success: function (response) {

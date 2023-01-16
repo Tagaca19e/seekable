@@ -4,6 +4,96 @@ html {
   margin: 0px;
 }
 
+* {
+  font-family: arial;
+}
+
+h1,
+p {
+  color: #000000a6;
+}
+
+a:link {
+  text-decoration: none;
+  color: black
+}
+
+a:visited {
+  text-decoration: none;
+  color: black
+}
+
+a:hover {
+  text-decoration: none;
+  color: black
+}
+
+a:active {
+  text-decoration: none;
+  color: black
+}
+
+.prefill_info,
+.sign_up,
+#div1,
+#div2,
+#div3 {
+  display: none;
+}
+
+#link {
+  color: black;
+  text-decoration: underline;
+}
+
+.main_container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border: 3px solid #8ef9c4;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+  
+  
+}
+
+input[type="text" i] {
+  padding: 1px 2px;
+  margin: 5px 0px;
+  font-size: 16px;
+  border: none;
+  color: black;
+  border-bottom: 1px rgb(0 0 0) solid;
+  padding: 5px 0px;
+  background: none;
+}
+
+input[type="submit" i],
+#button {
+  font-size: 16px;
+  color: #3f4542;
+  padding: 5px 10px;
+  backdrop-filter: blur(6.7px);
+  -webkit-backdrop-filter: blur(6.7px);
+  border: 1px solid #668073;
+  background: #8ef9c400;
+  border-radius: 5px;
+}
+
+
+.item-result {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 5px;
+  height: 100%;
+}
+
+.button {
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+
 #sf_res {
   height: 100%;
 }
@@ -112,7 +202,7 @@ html {
   from {
     opacity: 0;
   }
-
+  
   to {
     opacity: 1;
   }
